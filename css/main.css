@@ -1,0 +1,1016 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* COLORS =============================================
+Dark Pink (Magenta): #b21e49;
+Light Grey: #eeeeee;
+Bright Pink: #ff1256;
+Dark Grey: #222222;
+Blue: #23a4cc;
+============================================= */
+
+
+/*** GENERAL STYLES ***/
+
+body, html{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: #222222;
+    background-color: #eeeeee; 
+}
+
+ 
+a {
+    font-weight: bold;
+    color:#23a4cc;
+    text-decoration: none;
+}
+ 
+p{
+    font-size: 1em;
+    line-height:1.4em;
+}
+
+h1, h2, h3, h4{
+    font-weight:bold;
+}
+ 
+h1{
+    font-size: 1.4em; 
+    line-height: 1.6em;  
+}
+ 
+h2{
+    font-size: 1em; 
+}
+ 
+h3{
+
+}
+
+h4{
+
+}
+
+.btn, .btn-write{
+	background-color:#b21e49;
+	border:none;
+	color:#fff;
+	font-weight:bold;
+	text-transform:uppercase;
+	line-height:1.6em;
+	text-align: center;
+	box-shadow:2px 2px 0px #DADADA;
+    margin: 2px;
+    height:2.5em;
+	width:100%;
+	display:block;
+}
+
+.btn:hover{
+	background-color:#ff1256;
+}
+
+.btn-write:hover{
+	background-color:#ff1256;
+}
+
+input.btn{
+	background-color:#ff1256;
+}
+
+input.btn:hover{ 
+	background-color:#b21e49;
+}
+
+input {
+    width: 98%;
+    margin: 2px;
+}
+
+.no-border{
+	border:none;
+}
+
+
+/*** HEADER CONTENT ***/
+
+header {
+	width:100%;
+    margin:auto;
+}
+
+#logo {
+	width: 90%;
+	margin: auto;
+    background:#000;
+	padding:2%;
+	text-align:center;
+}
+
+nav {
+    width: 100%;   
+}
+
+nav a:hover{
+	color:#ff1256;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: auto; 
+    padding: 0;
+}
+
+nav ul li {
+    background:#ddd;
+    border-bottom: 1px solid #ccc;
+    text-align:center;
+    padding:15px 0;
+    display: inline;
+}
+
+nav ul li a {
+    color:#222222;
+    text-transform:uppercase;
+    font-size:1.125em;
+}
+
+nav ul li a:hover{
+	color:#ff1256;
+}
+
+nav .subnav {
+		display:none;
+}
+
+
+/*** MAIN CONTENT ***/
+
+#main-content {
+	clear:both;
+	width: 94%;
+	margin:auto;
+	max-width:960px;
+}
+
+/*** HOME PAGE & REVIEWS PAGE ***/
+
+/*** FEATURED STORY ***/
+
+.top-story {
+    overflow: auto;
+	width:100%;
+    border-bottom:1px solid #ccc;
+    
+}
+
+.top-img {
+	width:100%;
+    margin: 0px;
+}
+
+
+/*** SIDEBAR STYLES ***/
+
+aside {
+    
+}
+
+.sidebar {
+    width: 100%;
+}
+
+#newsletter {
+    width: 100%;
+    border-bottom:1px solid #ccc;
+	padding-bottom:20px;
+}
+
+.newsletter input{
+    width:100%;
+    box-sizing: border-box;
+	}
+
+.newsletter input[type="text"]{
+    margin-bottom:10px;
+    padding:5px 0px;
+	}
+
+.sidebar-upcoming {  
+    display: none;
+}
+
+.sidebar-faq {  
+    display: none;
+    
+}
+   
+.sidebar-write {   
+    clear:both;
+    width: 100%;
+    } 
+
+.reviews-sidebar #newsletter {   
+    display: none;
+}
+
+/***  FEED STYLES  ***/
+
+.feed {
+    width: 100%;
+    
+}
+
+.feed p {
+    display: none;
+}
+
+.feed-review p {
+    display: none;
+}
+
+.feed-item {
+    clear: both;
+    border-bottom: 1px solid #ccc;
+	padding-bottom:15px;
+}
+
+.feed-item h2 a{
+    color: #222;
+	}
+
+.feed-item h2 a:hover{
+    color:#23a4cc;
+	}
+
+.feed-type {
+	text-transform:uppercase;
+	font-size:0.8em;
+}
+
+.feed-img {
+    width: 45%;
+	float:left;
+	margin:0px;
+	padding-right: 3%;	
+}
+
+
+/*** DETAILS PAGE STYLES ***/
+
+#reviews-img, #news-img{
+	width:100%;
+	margin:0px;
+}
+
+
+/*** FOOTER CONTENT STYLES ***/
+
+footer {
+	width: 100%;
+	margin: auto;
+	border-top:1px solid #ccc;
+	padding-top:20px;
+	margin-top:20px;
+}
+
+
+#footer-logo {
+	width: 60%; 
+	background-color:#000;
+	text-align:center;
+	margin:auto;
+	padding:5%;
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media screen and (min-width: 768px) {
+    
+    .no-border{
+	border:none;
+}
+    
+/*** TABLET HEADER CONTENT STYLES***/
+
+    .grey-line{
+        width:100%;
+        height:2em;
+        position:absolute;
+        top:16px;
+        background:#ddd;
+    }
+    
+    header{
+        width:94%;
+        max-width:960px;
+        margin:auto;
+    }    
+    
+    #logo {
+	    width: 30%;
+	    float: left;
+        position:relative;
+        z-index:100;
+    }
+
+    nav {
+        width: 60%;
+        float:right;
+    }
+    
+    nav ul li {
+        display:block;
+        float:right;
+        padding:0 4%;
+        border:none;
+        line-height:2em;
+        position:relative;
+        top:16px;
+    }   
+    
+    
+/*** TABLET MAIN CONTENT ***/
+    
+    /*** HOME PAGE & REVIEWS PAGE STYLES ***/
+
+/*** FEATURED STORY STYLES ***/
+
+    .top-story {
+	    width:100%;
+        clear: both;
+        padding-top:40px;
+        padding-bottom:20px;
+    }
+    
+    .top-img {
+	    width:50%;
+        float:left;
+    }
+
+    .top-info{
+        width:47%;
+        float:right;
+    }
+    
+    .detail-title {  
+        width:50%;
+        float:left;
+    }
+    
+    .review-wording {  
+        clear: both;
+    }
+
+/*** TABLET SIDEBAR STYLES***/
+
+    
+    .sidebar{
+        clear:both;
+        width:30%;
+        float:right;
+    }    
+    
+    .reviews-sidebar {
+        clear:both;
+        overflow: auto;
+        border-bottom:1px solid #ccc;
+        padding-bottom:20px;
+    }
+    
+    #newsletter {
+        border-bottom:1px solid #ccc;
+        padding-bottom:20px;
+    }
+
+    .sidebar-upcoming, .sidebar-faq {
+        display: block;
+        border-bottom:1px solid #ccc;
+        padding-bottom:20px;
+    }
+    
+    .reviews-sidebar .sidebar-upcoming {   
+        display: none;
+    }
+    
+    .sidebar-write {   
+        clear:both;
+        width: 100%;
+    }
+    
+    .sidebar-write p {  
+        clear:both;
+        float: left;
+        width: 50%;
+    }   
+       
+    .btn-write {  
+        float: right;
+        width: 45%;
+    }  
+    
+     
+/*** TABLET FEED STYLES***/ 
+
+    .feed {
+        width: 68%;
+        float: left;
+        border-right:1px solid #ccc;
+    }
+
+    .feed-review {   
+        width: 100%;
+        clear: both;
+    }
+    
+    .feed-item{
+        padding-right:20px;
+    }
+
+    .feed-img {
+        width: 35%;
+    }
+
+    .feed-review p {   
+        display: none;
+    }
+    
+    .no-border {
+        border: none;
+    }
+
+
+/* TABLET DETAILS PAGES STYLES*/
+	
+    .detailed-content{
+        padding-top:30px;
+    }
+    
+    #reviews-img, #news-img{
+        width:50%;
+        margin:0px;
+        float:left;
+        margin-right:3%;
+    }
+ 
+    .detail-title{
+        width:47%;
+        float:right;
+    }
+    
+    aside.detail{
+        width:100%;    
+    }
+    
+    aside.detail .newsletter{
+        border:none;
+    }
+    
+    aside.detail .newsletter h2{  /* not in source code */
+        display:inline;
+    }
+    
+    aside.detail .newsletter input{
+        display:inline;
+        width:70%;
+    }
+    
+    aside.detail .newsletter .btn{
+        width:25%;
+    }
+    
+    aside.detail .newsletter input[type="text"] {
+        padding: 7px 0px;
+        margin-right:2%;
+    }
+       
+    aside.detail .sidebar-upcoming {  /* not in source code */
+        display: none;
+    }
+    
+    aside.detail .sidebar-faq {  /* not in source code */
+        display: none;
+    }
+    
+    ul.article-meta-info{
+        list-style:none;
+        padding:0px;
+        width: 100%;
+        height: 2em;
+    }
+    
+    ul.article-meta-info li{
+        float:left;
+        margin-bottom:10px;
+    }
+    
+    .article-author{
+        padding-right:10px;
+        border-right:1px solid;
+        margin-right:10px;
+    }
+    
+
+/*** TABLET FOOTER CONTENT ***/
+
+    footer {
+	   width: 100%;
+       clear: both;
+    }
+
+    #footer-logo{
+        width:30%;
+        margin:auto;
+        max-width: 100px;
+		padding: 2%;
+    }
+
+
+    /*end of tablet styles*/    
+}
+
+
+
+
+
+@media screen and (min-width: 940px) {
+  
+/*** DESKTOP GENERAL STYLES ***/    
+    
+    h1{
+		font-size:1.6em;
+		line-height:1.8em;
+	}
+    
+	h2{
+		font-size:1.4em;	
+	}
+    
+    .no-border{
+	border:none;
+}
+    
+    /*** DESKTOP HEADER STYLES ***/
+    
+	.grey-line{
+		top:28px;
+	}
+    
+	#logo {
+		width: 30%;
+	}
+    
+	nav {
+		width: 60%;
+	}
+	nav ul li {
+		top:28px;
+	}
+	
+	#main-content{
+		margin-top: 20px;
+	}
+      
+    
+    /***  DESKTOP MAIN STORY STYLES ***/
+    
+    
+    .top-story {
+        width: 65%;
+        float: left;
+        border:none;
+		padding-top: 10px;
+    }
+    
+    .top-img {
+        width: 100%;
+        max-width:620px;
+		padding-bottom:1em;
+    }
+    
+    .top-info{
+		width:100%;
+		float:none;
+	}
+    
+    
+/***  DESKTOP SIDEBAR CONTENT STYLES ***/
+    
+    .sidebar {
+        clear:none;
+        width: 30%;
+        float: right;
+        border-left:1px solid #ccc;
+		padding-left:2%;
+    }
+    
+    .reviews-sidebar {   
+        clear:none;
+        float:right;
+        width: 30%;  
+        border-left:1px solid #ccc;
+		padding-left:2%;
+    }
+
+    #newsletter {
+        border-bottom:1px solid #ccc;
+        padding-bottom:20px;
+    }  
+    
+    .sidebar-upcoming {  
+        display: block;
+    }
+
+    .sidebar-faq { 
+        border:none;
+    }
+    
+    .sidebar-write {  
+        display: none;
+    }
+      
+    .reviews-sidebar #newsletter {   
+        display: block;
+    }
+    
+    .reviews-sidebar .sidebar-upcoming {   
+        display: block;
+        border: none;
+    }
+         
+/*** DESKTOP DETAILS CONTENT STYLES ***/
+    
+    article.detailed-content{
+		width:65%;
+		float:left;
+		padding-right:2.5%;
+		border-right:1px solid #ccc;
+	}
+	
+	#reviews-img, #news-img{
+		width:100%;
+		float:none;
+	}
+    
+    .top-story {    /* not in source code */
+        width: 60%;
+    }
+    
+    
+    .detail-title {
+        width: 100%;
+        float: none;
+    }
+    
+    
+    aside.detail {
+        width: 30%;
+        float: right; 
+        clear: none;   /* not in source code */
+        border: medium none;
+		padding: 0px;
+    }
+    
+    aside.detail .newsletter input{
+        display:block;
+        width:100%;
+    }
+    
+    aside.detail .newsletter .btn{
+        width:100%;
+    }
+    
+    aside.detail .newsletter input[type="text"] {
+        margin-right:0px;
+    }
+    
+      
+    /*** DESKTOP FEED CONTENT STYLES ***/
+    
+    .feed, .feed-review {
+        clear: both;
+        width: 100%;
+        float: none;
+        padding-top:20px;
+		border-top:1px solid #ccc;
+		border-right:none;
+    }
+    
+    
+    .feed-item {    
+        overflow:auto;  
+    }
+    
+    .feed p{
+        display: block;
+        width: 65%; 
+        float: right;
+        margin-top:0px;
+    }
+    
+    
+    .feed-review  p{ 
+        display: block;
+        width: 65%;
+        float: right;
+    }
+    
+    
+    .feed h2{
+        margin:0px;
+    }
+    
+	.feed-img {
+		width:20%;
+	}
+    
+    
+/*** DESKTOP FOOTER STYLES ***/
+	
+	footer {
+		width: 100%;
+		clear:both;
+	}
+	#footer-logo{
+		width:30%;
+		margin:auto;
+	}
+    
+/*end of desktop styles*/    
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
